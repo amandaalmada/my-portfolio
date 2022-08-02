@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Barra de menú -->
+    <nav class="text-right text-white my-8">
+      <a class="mx-6" href="#">INICIO</a>
+      <a class="mx-6" href="#about">ACERCA DE MÍ</a>
+      <a class="mx-6" href="#portfolio">PORTAFOLIO</a>
+      <a class="mx-6" href="#contact">CONTACTO</a>
+    </nav>
+    <!-- Encabezado -->
+    <header
+      class="bg-[#71777d] bg-cover bg-no-repeat bg-bottom p-24 m-0 h-full"
+      style="background-image: url('img/IMG_0196.png')"
+    >
+      <!-- <div class="container px-8 py-0 m-0 fixed"> -->
+      <!-- </div> -->
+      <section class="text-center text-white m-8">
+        <h1 class="text-2xl uppercase py-1">Amanda Almada Meza</h1>
+        <p class="py-4">Desarrollo Web • Gestión de Producto de Software</p>
+        <button class="bg-[#54d0dd] py-2 px-8 my-4">
+          <a href="#about">Leer más</a>
+        </button>
+      </section>
+    </header>
+    <!-- Sección acerca de mí -->
+    <div id="about" class="h-96 text-center text-[#414a52] mx-auto px-14">
+      <h2 class="text-2xl p-6">Acerca de mí</h2>
+      <div
+        class="grid grid-cols-2 justify-items-center flex justify-center content-center"
+      >
+        <div>
+          <img class="p-2" src="img/IMG_0779.png" alt="" width="280px" />
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+            dapibus leo nec ornare diam. Sed commodo nibh ante facilisis
+            bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam
+            commodo nibh.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+            dapibus leo nec ornare diam. Sed commodo nibh ante facilisis
+            bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam
+            commodo nibh.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Sección Portafolio -->
+    <div id="portfolio" class="h-96 px-8 bg-[#71777d]">
+      <h2 class="text-2xl text-center text-[#54d0dd] p-4">Portafolio</h2>
+      <div
+        class="grid gap-3 grid-cols-3 grid-rows-2 justify-items-center text-white text-center mx-8 px-8"
+      >
+        <div class="p-2 bg-[#54d0dd] w-3/5 h-32 flex flex-col justify-between">
+          <h1 class="text-xl">Desarrollo Web</h1>
+          <button>Leer más</button>
+        </div>
+        <div class="p-2 bg-[#54d0dd] w-3/5 h-32 flex flex-col justify-between">
+          <h1 class="text-xl">Gestión de Producto de Software</h1>
+          <button>Leer más</button>
+        </div>
+        <div class="p-2 bg-[#54d0dd] w-3/5 h-32 flex flex-col justify-between">
+          <h1 class="text-xl">Análisis QA - Calidad de Software</h1>
+          <button>Leer más</button>
+        </div>
+        <div class="p-2 bg-[#54d0dd] w-3/5 h-32 flex flex-col justify-between">
+          <h1 class="text-xl">Implementaciones de Software</h1>
+          <button>Leer más</button>
+        </div>
+        <div class="p-2 bg-[#54d0dd] w-3/5 h-32 flex flex-col justify-between">
+          <h1 class="text-xl">Consultoría Metodologías Ágiles</h1>
+          <button>Leer más</button>
+        </div>
+        <div class="p-2 bg-[#54d0dd] w-3/5 h-32 flex flex-col justify-between">
+          <h1 class="text-xl">Comunicaciones</h1>
+          <button>Leer más</button>
+        </div>
+      </div>
+      <!-- <section class="grid gap-3 grid-cols-3 grid-rows-1 mx-14">
+        <article class="p-8 bg-zinc-800">
+          <h1 class="text-xl text-white">Título aqui</h1>
+          <p>Texto aquí</p>
+          <button>Leer más</button>
+        </article>
+        <article>
+          <h1 class="text-xl text-white">Título aqui</h1>
+          <p>Texto aquí</p>
+          <button>Leer más</button>
+        </article>
+        <article>
+          <h1 class="text-xl text-white">Título aqui</h1>
+          <p>Texto aquí</p>
+          <button>Leer más</button>
+        </article>
+      </section> -->
+    </div>
+    <div id="contact" class="h-96 text-center text-[#414a52] mx-auto">
+      <h2 class="text-2xl p-6">Contacto</h2>
+      <form action="/formulario" method="post">
+        <label for="name"></label>
+        <input type="text" placeholder="Nombre" class="p-1" />
+        <label for="email"></label>
+        <input type="email" placeholder="Email" class="p-1" />
+        <br />
+        <label for="comment"></label>
+        <textarea
+          name="comentario"
+          id=""
+          cols="50"
+          rows="4"
+          placeholder="Enviar mensaje"
+          class="my-4"
+        ></textarea>
+        <br />
+        <button type="submit" class="uppercase">Enviar mensaje</button>
+      </form>
+    </div>
+    <!-- Pie de página -->
+    <div id="footer" class="h-24">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
